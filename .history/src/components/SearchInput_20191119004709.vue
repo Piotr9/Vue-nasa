@@ -2,7 +2,6 @@
       <input
         id="search"
         name="search"
-        :class="{ dark }"
         :value="value"
         @input="handleChange"
       />
@@ -16,10 +15,6 @@ export default {
       type: String,
       required: true,
       default: '',
-    },
-    dark: {
-      type: Boolean,
-      default: false,
     },
   },
   methods: {
@@ -54,15 +49,5 @@ export default {
         outline: none;
         box-shadow: 0 10px 20px -8px rgba($color: white, $alpha: .5);
         background: none;
-    }
-
-    .dark {
-      color: #1e3d4a;
-      border-bottom-color: #1e3d4a;
-      background: none;
-    }
-
-    .dark:focus {
-      box-shadow: 0 10px 20px -8px rgba($color: #3c6b80, $alpha: .5);
     }
 </style>

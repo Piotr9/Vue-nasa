@@ -31,10 +31,6 @@ export default {
         @media (min-width: 768px) {
             font-size: 80px;
         }
-
-        @media (min-width: 1024px) {
-            font-size: 100px;
-        }
     }
 
     .subclaim {
